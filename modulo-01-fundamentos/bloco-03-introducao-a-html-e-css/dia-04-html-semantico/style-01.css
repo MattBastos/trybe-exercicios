@@ -3,7 +3,7 @@ h1 {
   }
 
   #equipes {
-      margin-left: 36.8%
+      text-align: center;
   }
 
   .first {
@@ -13,7 +13,7 @@ h1 {
     text-align: center;
     width: 200px;
     display: block;
-    margin-left: 12.7%;
+    margin: auto;
   }
 
   .second {
@@ -34,14 +34,10 @@ h1 {
     display: inline-block;
   }
 
+  .premiacao {
+      text-align: center;
+  }
+
   li {
     display: inline-block;
-  }
-
-  .premiacao {
-      
-  }
-
-  h3 {
-    text-align: center;
   }

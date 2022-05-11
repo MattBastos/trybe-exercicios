@@ -10,11 +10,11 @@ ol li:nth-child(odd) {
     text-transform: uppercase;
 }
 
-h1, h2 {
+h1, h3 {
     color: red;
 }
 
-h1 em, h2 em {
+h1 em{
     font-size: 40px;
     border: 1px solid black;
 }
@@ -24,7 +24,7 @@ li {
 }
 
 li em {
-    font-weight: 700;
+    font-weight: 550;
 }
 
 #linguagens li:not(:nth-child(n + 4)) {
@@ -39,22 +39,22 @@ li em {
     font-weight: 700;
 }
 
-#aliados li a[href*="stackoverflow"] {
+#aliados li a[href*="stackoverflow"]:hover {
     color: orange;
   }
   
-  #aliados li a[href*="w3schools"] {
+  #aliados li a[href*="w3schools"]:hover {
     color: green;
   }
   
-  #aliados li a[href*="mozilla"] {
+  #aliados li a[href*="mozilla"]:hover {
     color: black;
   }
   
-  #aliados li a[href*="devdocs"] {
+  #aliados li a[href*="devdocs"]:hover {
     color: yellow;
   }
   
-  #aliados li a[href*="trybe"] {
+  #aliados li a[href*="trybe"]:hover {
     color: green;
   }
