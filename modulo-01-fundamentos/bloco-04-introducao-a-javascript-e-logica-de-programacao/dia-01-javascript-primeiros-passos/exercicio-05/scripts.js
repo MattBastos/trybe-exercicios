@@ -6,4 +6,4 @@ if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "qu
   console.log("FINALMENTE, descanso merecido UwU");
 } else {
   console.log("Dia da semana inválido!");
-}
+};

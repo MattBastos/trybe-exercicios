@@ -15,6 +15,6 @@ if (currentHour >= 22 && currentHour < 24) {
   message = "Não deveríamos comer nada, é hora de dormir";
 } else {
   console.log("Horário inválido!");
-}
+};
 
 console.log(message);
