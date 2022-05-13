@@ -8,4 +8,4 @@ if (nota >= 80 && nota <= 100) {
   console.log("Você foi reprovada(o)");
 } else {
   console.log("Nota inválida");
-}
+};

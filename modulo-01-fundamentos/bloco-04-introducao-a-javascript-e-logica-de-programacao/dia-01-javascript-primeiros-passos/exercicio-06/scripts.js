@@ -14,5 +14,5 @@ switch (resultado) {
     break;
 
   default:
-    console.log("Não se aplica!")
-}
+    console.log("Não se aplica!");
+};
