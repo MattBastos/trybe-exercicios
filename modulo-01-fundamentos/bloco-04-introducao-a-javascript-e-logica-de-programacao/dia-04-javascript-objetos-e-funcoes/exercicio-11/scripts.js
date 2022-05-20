@@ -1,11 +1,11 @@
 function higherIndex(numbers) {
-  let higherIndex = 0;
+  let higher = numbers[0];
   for (let i in numbers) {
-    if (numbers[higherIndex] < numbers[i]) {
-      higherIndex = i;
+    if (higher < numbers[i]) {
+      higher = i;
     };
   };
-  return higherIndex;
+  return higher;
 };
 
-console.log(higherIndex([2, 3, 6, 7, 10, 1]));
+console.log(higherNumber([2, 3, 6, 7, 10, 1]));
