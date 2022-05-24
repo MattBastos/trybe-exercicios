@@ -124,11 +124,21 @@ function dayMouseOut() {
 dayMouseOver();
 dayMouseOut();
 
-function newTask(task) {
+function newTaskSpan(task) {
   let tasksContainer = document.querySelector('.my-tasks');
   let taskName = document.createElement('span');
   taskName.innerHTML = task;
   tasksContainer.appendChild(taskName);
 };
 
-newTask('Projeto:');
+newTaskSpan('Projeto:');
+
+function newTaskDiv(color) {
+  let tasksContainer = document.querySelector('.my-tasks');
+  let newTask = document.createElement('div');
+  newTask.className = 'task';
+  newTask.style.backgroundColor = color;
+  tasksContainer.appendChild(newTask);
+};
+
+newTaskDiv('green');
