@@ -41,6 +41,45 @@ function createDaysOfTheMonth() {
 
 createDaysOfTheMonth();
 
-function createHolidayButton(holidays) {
-  
-}
+function createHolidayButton(buttonName) {
+  let buttonContainer = document.querySelector('.buttons-container');
+  let newButton = document.createElement('button');
+  let newButtonID = 'btn-holiday';
+
+  newButton.innerHTML = buttonName;
+  newButton.id = newButtonID;
+  buttonContainer.appendChild(newButton);
+};
+
+createHolidayButton("Feriados");
+
+function displayHolidays() {
+  let holidayButton = document.querySelector("#btn-holiday");
+  let holidays = document.querySelectorAll('.holiday');
+  let backgroundColor = 'rgb(238,238,238)';
+  let setNewColor = 'white';
+
+  holidayButton.addEventListener('click', function() {
+    for (let i = 0; i < holidays.length; i += 1) {
+      if (holidays[i].style.backgroundColor === setNewColor) {
+        holidays[i].style.backgroundColor = backgroundColor;
+      } else {
+        holidays[i].style.backgroundColor = setNewColor;
+      };
+    };
+  });
+};
+
+displayHolidays();
+
+function createFridayButton(buttonName) {
+  let buttonContainer = document.querySelector('.buttons-container');
+  let newButton = document.createElement('button');
+  let newButtonID = 'btn-friday';
+
+  newButton.innerHTML = buttonName;
+  newButton.id = newButtonID;
+  buttonContainer.appendChild(newButton);
+};
+
+createFridayButton('Sexta-Feira');
