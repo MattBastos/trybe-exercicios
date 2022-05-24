@@ -1,10 +1,10 @@
 function createDaysOfTheWeek() {
-  const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
-  const weekDaysList = document.querySelector('.week-days');
+  let weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+  let weekDaysList = document.querySelector('.week-days');
 
   for (let i = 0; i < weekDays.length; i += 1) {
-    const days = weekDays[i];
-    const dayListItem = document.createElement('li');
+    let days = weekDays[i];
+    let dayListItem = document.createElement('li');
     dayListItem.innerHTML = days;
     weekDaysList.appendChild(dayListItem);
   };
@@ -13,8 +13,8 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 function createDaysOfTheMonth() {
-  const decDays = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
-  const monthDaysList = document.querySelector('#days');
+  let decDays = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  let monthDaysList = document.querySelector('#days');
 
   for (let i = 0; i < decDays.length; i += 1) {
     let day = decDays[i];
@@ -102,3 +102,33 @@ function displayFridays(fridaysArray) {
 
 let decFridays = [4, 11, 18, 25];
 displayFridays(decFridays);
+
+function dayMouseOver() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  });
+};
+
+function dayMouseOut() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontWeight = '200';
+    event.target.style.fontSize = '20px';
+  });
+};
+
+dayMouseOver();
+dayMouseOut();
+
+function newTask(task) {
+  let tasksContainer = document.querySelector('.my-tasks');
+  let taskName = document.createElement('span');
+  taskName.innerHTML = task;
+  tasksContainer.appendChild(taskName);
+};
+
+newTask('Projeto:');
