@@ -9,6 +9,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 15px;
   color: white;
   background-color: rgb(61, 61, 61);
@@ -22,4 +23,44 @@ header {
 
 #sign-up {
   color: white;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#p-presentation {
+  font-size: 25px;
+}
+
+#techs-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo-techs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 1px solid grey;
+}
+
+.logo-techs-imgs {
+  width: 170px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-socials {
+  width: 35px;
 }
