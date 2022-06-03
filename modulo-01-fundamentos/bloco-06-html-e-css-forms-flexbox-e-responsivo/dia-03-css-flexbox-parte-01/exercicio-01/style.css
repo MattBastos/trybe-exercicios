@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.container {
+  margin-bottom: 15px;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -33,7 +37,11 @@ main {
 }
 
 #p-presentation {
-  font-size: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 40px;
 }
 
 #techs-container {
@@ -44,15 +52,30 @@ main {
 }
 
 .logo-techs {
+  margin: 3px;
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: rgb(232, 232, 232);
+  box-shadow: 2px 2px rgb(138, 138, 138);
+}
+
+.tech-names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
 
 .logo-techs-imgs {
-  width: 170px;
+  width: 225px;
+}
+
+hr {
+  padding-bottom: 15px;
 }
 
 footer {
@@ -62,5 +85,6 @@ footer {
 }
 
 .logo-socials {
-  width: 35px;
+  width: 45px;
+  margin: 15px 5px;
 }
