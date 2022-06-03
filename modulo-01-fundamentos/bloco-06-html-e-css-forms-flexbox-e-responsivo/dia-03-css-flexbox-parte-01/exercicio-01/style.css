@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(61, 61, 61);
+}
+
+#logo-trybe {
+  width: 70px;
+  display: flex;
+  align-items: center;
+}
+
+#sign-up {
+  color: white;
+}
