@@ -22,7 +22,6 @@ header {
 #logo-trybe {
   width: 70px;
   display: flex;
-  align-items: center;
 }
 
 #sign-up {
@@ -32,8 +31,8 @@ header {
 main {
   width: 100%;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 #p-presentation {
@@ -46,6 +45,7 @@ main {
 
 #techs-container {
   width: 100%;
+  max-width: 900px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -75,16 +75,21 @@ main {
 }
 
 hr {
-  padding-bottom: 15px;
+  width: 250px;
+  height: 2px;
+  margin: 10px 0px 5px;
+  border: none;
+  background-color: rgb(138, 138, 138);
 }
 
 footer {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo-socials {
+.logo-socials-imgs {
   width: 45px;
   margin: 15px 5px;
 }
