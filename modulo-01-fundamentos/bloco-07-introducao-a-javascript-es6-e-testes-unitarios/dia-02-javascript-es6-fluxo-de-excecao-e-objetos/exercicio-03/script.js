@@ -29,5 +29,3 @@ window.onload = () => {
   const button = document.getElementById('button');
   button.addEventListener('click', sum);
 };
-
-console.log(sum(1, 2));
