@@ -77,3 +77,28 @@ const smallerName = (books) => {
 
 console.log(smallerName(books));
 
+const getNamedBook = (books) => books.find((book) => book.name.length === 26);
+
+console.log(getNamedBook(books));
+
+const orderedBooksByReleaseYearDesc = (books) => books.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear);
+
+console.log(orderedBooksByReleaseYearDesc(books));
+
+const everyAuthorBornOnCenturyXX = (books) => {
+  return books.every((book) => book.author.birthYear > 1900 && book.author.birthYear <= 2000);
+}
+
+console.log(everyAuthorBornOnCenturyXX(books));
+
+const someBookReleasedOnThe80s = (books) => books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
+
+console.log(someBookReleasedOnThe80s(books));
+
+const checkAuthorSameBirthYear = (books) => {
+  return books.every((book) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)));
+};
+
+console.log(checkAuthorSameBirthYear(books));
