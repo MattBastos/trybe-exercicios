@@ -72,3 +72,22 @@ const authorsNames = (books) => {
 };
 
 console.log(authorsNames(books));
+
+const averageAuthorsAge = (books) => {
+  const sumOfAges = books.reduce((acc, curr) => 
+  acc + (curr.releaseYear - curr.author.birthYear), 0);
+  return sumOfAges / books.length;
+};
+
+console.log(averageAuthorsAge(books));
+
+const longestNameBook = (books) => {
+  return books.reduce((acc, curr) => {
+    if (acc.name.length > curr.name.length) {
+      return acc;
+    }
+    return curr;
+  },);
+};
+
+console.log(longestNameBook(books));
