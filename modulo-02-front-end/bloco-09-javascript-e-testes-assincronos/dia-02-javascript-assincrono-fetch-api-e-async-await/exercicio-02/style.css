@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flexbox;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  padding: 10px;
+}
+
+ol {
+  padding: 10px;
+}
+
+li {
+  padding: 10px;
+  font-size: 25px;
+}
